@@ -225,6 +225,8 @@ const tempModal = `
         </div>
         </div>
     </div>
+   <img class="hpny" src="./assets/images/tiger.png" alt="">
+
 `
 
 setTimeout(() => {
