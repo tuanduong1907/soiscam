@@ -223,7 +223,7 @@ const tempModal = `
 
 setTimeout(() => {
     document.body.insertAdjacentHTML('beforeend', tempModal)
-},3000)
+},2000)
 
 document.body.addEventListener('click', (e) => {
     if(e.target.matches('.modal')) {
