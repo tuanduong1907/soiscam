@@ -220,6 +220,8 @@ const tempModal = `
                 Thanks AE trong group đã vào test web và cho góp ý
             </h3>
             <h3> 😄 😄 😄</h3>
+            <br>
+            <h3 class="primary-color"> - DƯƠNG TUẤN -</h3>
         </div>
         </div>
     </div>
