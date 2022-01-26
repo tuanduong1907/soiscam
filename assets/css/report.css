@@ -101,11 +101,15 @@
     display: inline-block;
     cursor: pointer;
     box-shadow: 0 0 0 4px #eee;
-    transition: all 0.25s linear;
+    transition: all 0.1s linear;
     -webkit-border-radius: 2rem;
     -moz-border-radius: 2rem;
     -ms-border-radius: 2rem;
     -o-border-radius: 2rem;
+    -webkit-transition: all 0.1s linear;
+    -moz-transition: all 0.1s linear;
+    -ms-transition: all 0.1s linear;
+    -o-transition: all 0.1s linear;
 }
 .radio-input:checked + .radio-label {
     box-shadow: 0 0 0 4px #fff, 0 0 0 6px var(--primary-color);
