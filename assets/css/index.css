@@ -243,7 +243,16 @@
     font-size: 2rem;
 }
 
-
+.hpny{
+    position: fixed;
+    bottom: 20px;
+    left: 0;
+    height: 120px;
+    user-select: none;
+    pointer-events: none;
+    animation: fadeIn 2s linear;
+    -webkit-animation: fadeIn 2s linear;
+}
 
 /* Mobile & tablet: width <1024px */
 @media only screen and (max-width: 63.9375em){
@@ -341,6 +350,11 @@
     .btn-goup i{
         font-size: 1.8rem;
     }
+    .hpny{
+        display: none;
+        animation: fadeIn 10s ease;
+        -webkit-animation: fadeIn 10s ease;
+}
 }
 
 /* PC Low */
