@@ -210,7 +210,7 @@ const tempModal = `
             <h2>CẬP NHẬT 26-01-2022</h2>
             <p>
                 <i class="fas fa-circle"></i>
-                Đã fix lại tính năng <span class="primary-color">validate</span>
+                Đã fix lại tính năng <span class="primary-color">validate</span> của trang <a href="./page/report-scam.html" class="modal-link">Gửi tố cáo</a>
             </p>
             <h3>
                 Thanks mọi người đã vào test web và cho góp ý

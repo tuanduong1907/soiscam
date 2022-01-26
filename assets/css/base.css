@@ -122,6 +122,21 @@ body{
     -webkit-animation: sideInModal linear .5s;
 }
 
+.modal-link{
+    display: inline;
+    font-weight: 600;
+    transition: all linear .1s;
+    -webkit-transition: all linear .1s;
+    -moz-transition: all linear .1s;
+    -ms-transition: all linear .1s;
+    -o-transition: all linear .1s;
+}
+
+.modal-link:hover{
+    color: var(--primary-color);
+    text-decoration: underline;
+}
+
 @keyframes sideInModal {
     from{
         opacity: 0;
