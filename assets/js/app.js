@@ -231,13 +231,18 @@ setTimeout(() => {
     document.body.insertAdjacentHTML('beforeend', tempModal)
 },2000)
 
-document.body.addEventListener('click', (e) => {
-    if(e.target.matches('.modal')) {
-        e.target.parentNode.removeChild(e.target)
-    }else if(e.target.matches('.modal-close')) {
-        const modal = document.querySelector('.modal')
-        if(modal) {
-            modal.parentNode.removeChild(modal)
+setTimeout(()=> {
+    document.body.addEventListener('click', (e) => {
+        if(e.target.matches('.modal')) {
+            e.target.parentNode.removeChild(e.target)
+        }else if(e.target.matches('.modal-close')) {
+            const modal = document.querySelector('.modal')
+            if(modal) {
+                setTimeout(()=> {
+                    
+                })
+                modal.parentNode.removeChild(modal)
+            }
         }
-    }
-})
+    })
+},2500)
