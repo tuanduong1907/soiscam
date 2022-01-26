@@ -115,6 +115,7 @@ body{
     padding: 40px;
     border: 2px solid var(--primary-color);
     user-select: none;
+    cursor: default;
     animation: sideInModal linear .5s;
     -webkit-border-radius: 8px;
     -moz-border-radius: 8px;
