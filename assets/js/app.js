@@ -219,7 +219,7 @@ const tempModal = `
             <h3>
                 Thanks AE trong group đã vào test web và cho góp ý
             </h3>
-            <h3> 😄 😄 😄</h3>
+            <h3>😄😄😄</h3>
             <br>
             <h3 class="primary-color"> - DƯƠNG TUẤN -</h3>
         </div>
@@ -238,9 +238,6 @@ setTimeout(()=> {
         }else if(e.target.matches('.modal-close')) {
             const modal = document.querySelector('.modal')
             if(modal) {
-                setTimeout(()=> {
-                    
-                })
                 modal.parentNode.removeChild(modal)
             }
         }
