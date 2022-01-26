@@ -217,7 +217,7 @@ const tempModal = `
                 Đã fix lại tính năng <span class="primary-color">validate</span> của trang <a href="./page/report-scam.html" class="modal-link">Gửi tố cáo</a>
             </p>
             <h3>
-                Thanks mọi người đã vào test web và cho góp ý
+                Thanks AE trong group đã vào test web và cho góp ý
             </h3>
             <h3> 😄 😄 😄</h3>
         </div>
