@@ -316,19 +316,20 @@
 /* Responsive */
 /* Mobile & tablet: width <1024px */
 @media only screen and (max-width: 63.9375em){
-
+    .container__content-wrap{
+        width: 100%;
+    }
 }
 
 /* Tablet: width >= 740px and width < 1024px */
 @media only screen and (min-width: 46.25em) and (max-width: 63.9375em) {
-
+    .container__content{
+        padding: 24px;
+    }
 }
 
 /* Mobie: width < 740px */
 @media only screen and (max-width: 46.1875em) {
-    .container__content-wrap{
-        width: 100%;
-    }
     .form-search{
         width: 100%;
     }
@@ -386,6 +387,8 @@
     .reputation__introduce-title{
         font-size: 1.6rem;
     }
+
+    
 
 }
 

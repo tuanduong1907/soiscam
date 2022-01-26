@@ -23,6 +23,7 @@ Validator({
         Validator.isRequired('#accountNumber', 'Vui lòng nhập STK '),
         Validator.minLength('#accountNumber', 10),
         Validator.isRequired('#bank', 'Vui lòng nhập tên ngân hàng'),
+        Validator.minLength('#bank', 3),
         Validator.isRequired('#content', 'Vui lòng nhập nội dung tố cáo'),
         Validator.isRequired('#authorName', 'Vui lòng nhập tên của bạn'),
         Validator.minLength('#authorName', 6),

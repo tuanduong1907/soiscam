@@ -198,3 +198,40 @@ document.body.addEventListener('click', (e) => {
         e.target.parentNode.removeChild(e.target)
     }
 })
+
+
+// Modal
+
+const tempModal = `
+    <div class="modal">
+        <div class="modal-container">
+        <i class="modal-close far fa-times-circle"></i>
+        <div class="modal-content">
+            <h2>CẬP NHẬT 26-01-2022</h2>
+            <p>
+                <i class="fas fa-circle"></i>
+                Đã fix lại tính năng <span class="primary-color">validate</span>
+            </p>
+            <h3>
+                Thanks mọi người đã vào test web và cho góp ý
+            </h3>
+            <h3> 😄 😄 😄</h3>
+        </div>
+        </div>
+    </div>
+`
+
+setTimeout(() => {
+    document.body.insertAdjacentHTML('beforeend', tempModal)
+},3000)
+
+document.body.addEventListener('click', (e) => {
+    if(e.target.matches('.modal')) {
+        e.target.parentNode.removeChild(e.target)
+    }else if(e.target.matches('.modal-close')) {
+        const modal = document.querySelector('.modal')
+        if(modal) {
+            modal.parentNode.removeChild(modal)
+        }
+    }
+})
