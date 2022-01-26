@@ -207,7 +207,11 @@ const tempModal = `
         <div class="modal-container">
         <i class="modal-close far fa-times-circle"></i>
         <div class="modal-content">
-            <h2>CẬP NHẬT 26-01-2022</h2>
+            <h2>
+                <i class="fas fa-tools"></i>
+                CẬP NHẬT
+                <p>26-01-2022</p>
+            </h2>
             <p>
                 <i class="fas fa-circle"></i>
                 Đã fix lại tính năng <span class="primary-color">validate</span> của trang <a href="./page/report-scam.html" class="modal-link">Gửi tố cáo</a>
