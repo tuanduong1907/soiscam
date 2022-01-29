@@ -13,6 +13,19 @@ function showSuccessToast() {
     });
 }
 
+// Resest
+function resest() {
+    document.querySelector('#accountHolder').value = ''
+    document.querySelector('#phoneNumber').value = ''
+    document.querySelector('#accountNumber').value = ''
+    document.querySelector('#bank').value = ''
+    document.querySelector('#image').value = ''
+    document.querySelector('#content').value = ''
+    document.querySelector('#authorName').value = ''
+    document.querySelector('#authorPhone').value = ''
+}
+
+
 Validator({
     form: '.form-post',
     formGroupSelector: '.form-item',
@@ -51,5 +64,6 @@ Validator({
         })
         btnSubmit.classList.remove("is-loading");
         showSuccessToast()
+        resest()
     }
 });
