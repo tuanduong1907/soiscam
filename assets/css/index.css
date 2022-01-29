@@ -237,11 +237,11 @@
     justify-content: center;
     align-items: center;
     cursor: pointer;
-    transition: all linear .5s;
-    -webkit-transition: all linear .5s;
-    -moz-transition: all linear .5s;
-    -ms-transition: all linear .5s;
-    -o-transition: all linear .5s;
+    transition: all linear .4s;
+    -webkit-transition: all linear .4s;
+    -moz-transition: all linear .4s;
+    -ms-transition: all linear .4s;
+    -o-transition: all linear .4s;
 }
 
 .btn-goup i {
