@@ -244,6 +244,9 @@ setTimeout(()=> {
             }
         }
     })
+},2500)
+
+setTimeout(() =>{
     const btnGoUp = document.querySelector('.btn-goup')
     btnGoUp.style.bottom = '80px'
-},2500)
+}, 4000)
