@@ -55,6 +55,7 @@
 
 .scammer-header__name{
     font-weight: bold;
+    line-height: 1.4;
     margin-right: auto;
     pointer-events: none;
     display:-webkit-box;
