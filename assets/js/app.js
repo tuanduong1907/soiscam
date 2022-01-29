@@ -245,3 +245,8 @@ setTimeout(()=> {
         }
     })
 },2500)
+
+setTimeout(() =>{
+    const btnGoUp = document.querySelector('.btn-goup')
+    btnGoUp.style.bottom = '60px'
+},2500)
