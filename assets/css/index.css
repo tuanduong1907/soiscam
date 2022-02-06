@@ -55,6 +55,7 @@
 
 .scammer-header__name{
     font-weight: bold;
+    line-height: 1.4;
     margin-right: auto;
     pointer-events: none;
     display:-webkit-box;
@@ -236,22 +237,16 @@
     justify-content: center;
     align-items: center;
     cursor: pointer;
+    transition: all linear .4s;
+    -webkit-transition: all linear .4s;
+    -moz-transition: all linear .4s;
+    -ms-transition: all linear .4s;
+    -o-transition: all linear .4s;
 }
 
 .btn-goup i {
     color: #fff;
     font-size: 2rem;
-}
-
-.hpny{
-    position: fixed;
-    bottom: 20px;
-    left: 0;
-    height: 120px;
-    user-select: none;
-    pointer-events: none;
-    animation: fadeIn 2s linear;
-    -webkit-animation: fadeIn 2s linear;
 }
 
 /* Mobile & tablet: width <1024px */
@@ -344,7 +339,7 @@
         width: 40px;
         height: 40px;
         right: 12px;
-        bottom: 24px;
+        bottom: 30px;
     }
 
     .btn-goup i{

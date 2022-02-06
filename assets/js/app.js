@@ -199,49 +199,8 @@ document.body.addEventListener('click', (e) => {
     }
 })
 
+setTimeout(() =>{
+    const btnGoUp = document.querySelector('.btn-goup')
+    btnGoUp.style.bottom = '80px'
+}, 3500)
 
-// Modal
-
-const tempModal = `
-    <div class="modal">
-        <div class="modal-container">
-        <i class="modal-close far fa-times-circle"></i>
-        <div class="modal-content">
-            <h2>
-                <i class="fas fa-tools"></i>
-                CẬP NHẬT
-                <p>26-01-2022</p>
-            </h2>
-            <p>
-                <i class="fas fa-circle"></i>
-                Đã fix lại tính năng <span class="primary-color">validate</span> của trang <a href="./page/report-scam.html" class="modal-link">Gửi tố cáo</a>
-            </p>
-            <h3>
-                Thanks AE trong group đã vào test web và cho góp ý
-            </h3>
-            <h3>😄😄😄</h3>
-            <br>
-            <h3 class="primary-color"> - DƯƠNG TUẤN -</h3>
-        </div>
-        </div>
-    </div>
-   <img class="hpny" src="./assets/images/tiger.png" alt="">
-
-`
-
-setTimeout(() => {
-    document.body.insertAdjacentHTML('beforeend', tempModal)
-},2000)
-
-setTimeout(()=> {
-    document.body.addEventListener('click', (e) => {
-        if(e.target.matches('.modal')) {
-            e.target.parentNode.removeChild(e.target)
-        }else if(e.target.matches('.modal-close')) {
-            const modal = document.querySelector('.modal')
-            if(modal) {
-                modal.parentNode.removeChild(modal)
-            }
-        }
-    })
-},2500)
