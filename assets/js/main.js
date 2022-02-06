@@ -33,13 +33,13 @@ function stopPropagation(e) {
 
 function showNotifi(e) {
     document.body.insertAdjacentHTML('beforeend', tempModal)
+    stopPropagation(e)
 }
 
 // event
 document.body.addEventListener('click', (e) =>{
-    const active = document.querySelector('.active')
     const modal =  document.querySelector('.modal')
-    if(active) {
+    if(e.target.matches('.active')) {
         menu.classList.remove('active')
     }else if(e.target.matches('.modal')) {
         modal.parentNode.removeChild(e.target)
