@@ -326,7 +326,7 @@ body{
     letter-spacing: 3px;
 }
 
-.container__menu.active{
+.container__menu.is-active{
     transform: translateX(0);
     -webkit-transform: translateX(0);
     -moz-transform: translateX(0);
