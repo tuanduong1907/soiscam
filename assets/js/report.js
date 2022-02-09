@@ -1,4 +1,5 @@
 const scammerApi = 'https://61e8b8af7ced4a00172ff662.mockapi.io/api/listscammer'
+const scammerPendingApi = 'https://62012118fdf509001724986e.mockapi.io/api/scammerPending' 
 const formPost = document.querySelector('.form-post')
 const btnSubmit = document.querySelector('.btn-submit')
 const loader = document.querySelector('.loader')
@@ -7,7 +8,7 @@ const loader = document.querySelector('.loader')
 function showSuccessToast() {
     toast({
         title: "Thành công!",
-        message: "Dữ liệu đã được post lên. Vui lòng về lại trang chủ để xem",
+        message: "Đã gửi duyệt. Vui lòng chờ Admin xét duyệt",
         type: "success",
         duration: 3000
     });
@@ -45,7 +46,7 @@ Validator({
     ],
     onSubmit: async function({accountHolder, phoneNumber, accountNumber, bank, image, content, option, authorName, authorPhone}) {
         btnSubmit.classList.add("is-loading");
-        await fetch(scammerApi, {
+        await fetch(scammerPendingApi, {
             method: 'POST',
             body: JSON.stringify({
                 accountHolder,

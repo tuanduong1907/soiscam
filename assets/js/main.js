@@ -33,14 +33,15 @@ function stopPropagation(e) {
 
 function showNotifi(e) {
     document.body.insertAdjacentHTML('beforeend', tempModal)
+    stopPropagation(e)
 }
 
 // event
 document.body.addEventListener('click', (e) =>{
-    const active = document.querySelector('.active')
     const modal =  document.querySelector('.modal')
-    if(active) {
-        menu.classList.remove('active')
+    const isActive = document.querySelector('.is-active')
+    if(isActive) {
+        menu.classList.remove('is-active')
     }else if(e.target.matches('.modal')) {
         modal.parentNode.removeChild(e.target)
     }else if(e.target.matches('.modal-close')) {
@@ -50,7 +51,7 @@ document.body.addEventListener('click', (e) =>{
 menu.addEventListener('click',stopPropagation)
 
 menuBtn.addEventListener('click', (e) =>{
-    menu.classList.toggle('active')
+    menu.classList.toggle('is-active')
     stopPropagation(e)
 })
 
