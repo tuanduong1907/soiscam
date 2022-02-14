@@ -4,7 +4,7 @@ const loader = document.querySelector('.scammer-list__loader')
 const overlay = document.querySelector('.overlay')
 const overlayImage = document.querySelector('.overlay img')
 const searchRemove = document.querySelector('.header__search-remove')
-const scammerApi = 'https://61e8b8af7ced4a00172ff662.mockapi.io/api/listscammer'
+const scammerApi = 'https://61e8b8af7ced4a00172ff662.mockapi.io/api/scammer-list'
 const scammerList = document.querySelector('.scammer-list')
 
 // Event

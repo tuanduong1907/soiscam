@@ -115,7 +115,6 @@ body{
     -o-transition: all linear .1s;
 }
 
-
 .modal-container{
     position: relative;
     margin: auto;
@@ -167,7 +166,7 @@ body{
 
 .modal-container p{
     font-size: 1.8rem;
-    margin-bottom: 20px;
+    margin-bottom: 12px;
     line-height: 1.4;
 }
 
@@ -196,6 +195,31 @@ body{
 
 .modal-content{
     margin-top: 12px;
+}
+
+.notifi-content{
+    padding-bottom: 12px;
+}
+
+.notifi-day{
+    text-align: center;
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.notifi-day .text{
+    padding: 0 8px;
+    display: inline;
+    color: var(--primary-color);
+}
+
+.notifi-line{
+    height: 2px;
+    width: 14px;
+    background-color: var(--primary-color);
+
 }
 
 
@@ -410,12 +434,35 @@ body{
 /* Notifi */
 .notifi-img{
     position: fixed;
-    bottom: 20px;
+    bottom: 30px;
     left: 20px;
     cursor: pointer;
     height: 170px;
 }
 
+/* CopyRigh */
+.copy-right{
+    position: fixed;
+    bottom: 10px;
+    left: 5px;
+    display: flex;
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: var(--primary-color);
+    user-select: none;
+
+}
+
+.copy-right a{
+    margin: 0 4px;
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: var(--primary-color);
+}
+
+.copy-right a:hover{
+    text-decoration: underline;
+}
 
 /* Responsive */
 /* Mobile & tablet: width <1024px */
@@ -512,7 +559,13 @@ body{
     }
     
     .notifi-img{
-        display: none;
+        position: absolute;
+        bottom: 10px;
+        left: 30px;
+    }
+
+    .modal{
+        padding: 12px;
     }
 }
 
