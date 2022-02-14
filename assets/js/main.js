@@ -29,7 +29,7 @@ const tempModal = `
                 </p>
                 <p>
                     <i class="fas fa-circle"></i>
-                    Update tính năng kiểm duyết đơn tố cáo
+                    Update tính năng kiểm duyệt đơn tố cáo
                 </p>
                 <p>
                     <i class="fas fa-circle"></i>
