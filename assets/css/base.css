@@ -443,7 +443,7 @@ body{
 /* CopyRigh */
 .copy-right{
     position: fixed;
-    bottom: 10px;
+    bottom: 0px;
     left: 5px;
     display: flex;
     font-size: 1.2rem;
